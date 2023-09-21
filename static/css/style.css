@@ -1,0 +1,138 @@
+/* Reset default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Specific styles for different sections */
+  h1, h2, h3 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  table th, table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+  }
+  
+  table th {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  /* Additional styles for a modern and cool look */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    transition: background-color 0.3s ease;
+  }
+  
+  .content {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  button {
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff4d4d;
+  }

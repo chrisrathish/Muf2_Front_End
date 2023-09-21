@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block extra_css %}{% endblock %}
+    <title>{% block title %}MUF 2.0{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MUF 2.0</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'upload:upload_document' %}">Upload</a></li>
+                    <li><a href="{% url 'jobtracker:job_list' %}">Job Tracker</a></li>
+                    <li><a href="{% url 'resultpage:completed_job_list' %}">Result Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Systematrix AI. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

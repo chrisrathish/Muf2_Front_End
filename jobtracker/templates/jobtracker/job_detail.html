@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}Job Detail - MUF 2.0{% endblock %}
+
+{% block content %}
+    <h2>Job Detail</h2>
+    <div class="job-details">
+        <h3>Job ID: {{ job.id }}</h3>
+        <p>Job Name: {{ job.name }}</p>
+        <p>Status: {{ job.status }}</p>
+        <p>Created At: {{ job.created_at }}</p>
+        <p>Completed At: {{ job.completed_at }}</p>
+        <p>Progress: {{ job.progress }}%</p>
+    </div>
+{% endblock %}
